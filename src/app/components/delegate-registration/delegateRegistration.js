@@ -11,7 +11,7 @@ app.directive('delegateRegistration', ($mdDialog, delegateService, Account, dial
           delegateService.registerDelegate($scope.form.name.toLowerCase(), Account.get().passphrase)
             .then(() => {
               dialog.successAlert({
-                title: 'Congratulations!',
+                title: 'Success',
                 text: 'Account was successfully registered as delegate.',
               })
                 .then(() => {
