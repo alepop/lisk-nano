@@ -50,7 +50,7 @@ function launchApp() {
   browser.ignoreSynchronization = true;
   browser.driver.manage().window().setSize(1000, 1000);
   browser.refresh();
-  browser.get('http://localhost:8080#/?peerStack=localhost');
+  browser.get('http://localhost:8080/#/?peerStack=localhost');
 }
 
 function login(account) {
